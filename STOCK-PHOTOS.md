@@ -4,7 +4,8 @@ All photographs in this demo are hosted by Unsplash and were marked free to use 
 
 | Use | Photographer | Source |
 | --- | --- | --- |
-| Hero, retaining walls, quote sharing image | Sergej Karpow | https://unsplash.com/photos/AqCTAOMJUVk |
+| Homepage hero | Se. Tsuchiya | https://unsplash.com/photos/1wAmm_d2TDM |
+| Retaining walls and quote sharing image | Sergej Karpow | https://unsplash.com/photos/AqCTAOMJUVk |
 | Patio and outdoor living | Caroline Badran | https://unsplash.com/photos/frjvtsVykcU |
 | Lawn care | Michael Smith | https://unsplash.com/photos/bsld7GjQwjI |
 | Landscape design and garden beds | QY Liu | https://unsplash.com/photos/184tM0HpxPA |
