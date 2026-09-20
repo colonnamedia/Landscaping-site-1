@@ -11,12 +11,16 @@
 | Repository | https://github.com/colonnamedia/Landscaping-site-1 |
 | Default branch | `main` |
 | Working branch | `main` — Anthony explicitly approved the initial commit and Vercel publication |
-| Tested implementation commit | Pending initial remote commit |
-| Handoff commit | Pending final deployment documentation commit |
+| Tested implementation commit | `02940c4f6e344632966a162abb2d40ffb306e0d5` |
+| Storefront media commit | `6ec3de77b67c59be4f978b29effcfe098614c5b3` |
+| Handoff commit | Final documentation-only commit on `main`; verify the latest repository commit before editing |
 | Hosting provider | Vercel |
-| Preview URL | Pending first Vercel deployment |
-| Live URL | Pending first Vercel deployment |
-| Live-site status | Deployment pending; intended as a public Fireworks storefront demo |
+| Vercel project | `landscaping-site-1` in Anthony's projects |
+| Preview URL | https://landscaping-site-1.vercel.app |
+| Live URL | https://landscaping-site-1.vercel.app |
+| Live-site status | Production deployment verified; public Fireworks storefront listing verified |
+| Storefront listing | Rivers & Roots — Landscaping Website — Featured, Available, $699.99 + $39.99/month Tier 1 hosting |
+| Storefront URL | https://fireworks-websitebuilder.com/WebsiteCollection |
 | Last verified | September 20, 2026 |
 
 ## Goal and approved scope
@@ -47,7 +51,7 @@ Create a polished, ready-built landscaping website for the Fireworks website col
 
 - `/` — Pittsburgh-focused homepage; primary action: Request a Free Quote.
 - `/services` — landscape design, patios and walkways, retaining walls and grading, lawn and seasonal care.
-- `/#approach` — local-first approach and trust-building content without a fourth page, preserving the Get Found three-page limit.
+- `/#approach` — local-first approach and trust-building content without a fourth page, preserving the three-page storefront tier.
 - `/quote` — detailed inquiry form covering contact details, location, services, timeline, budget, and project goals.
 - `/robots.txt`, `/sitemap.xml`, `/site.webmanifest`, `/favicon.svg` — discovery and browser metadata assets.
 
@@ -59,34 +63,37 @@ The quote form validates required contact, property, timing, service, and projec
 
 | Provider | Purpose | Status | Project/resource reference | Environment variable names | Webhook or route | Remaining setup |
 |---|---|---|---|---|---|---|
-| Vercel | Static hosting and clean URLs | Planned | Pending project link to `colonnamedia/Landscaping-site-1` | None | None | Import repository, deploy `main`, verify build and all routes |
+| Vercel | Static hosting, clean URLs, and automatic production deploys from `main` | Active and verified | Project `landscaping-site-1`; repository `colonnamedia/Landscaping-site-1` | None | None | Add a customer domain only after purchase and approval |
+| Fireworks storefront | Public catalog listing and sales entry point | Published and verified | `Rivers & Roots — Landscaping Website`; Featured; Available | None | None | Customize the master after purchase; do not edit the public listing price without approval |
 | Form delivery provider | Deliver customer quote inquiries | Not selected | None | None | None | Choose only after a customer purchases the website |
 
 No database, payment, authentication, analytics, or inherited client integration is present.
 
 ## Deployment
 
-`vercel.json` runs `npm run build`, publishes `dist/`, enables clean URLs, adds long-lived asset caching, and sets basic security headers. The repository must remain linked to production branch `main`. Record the final Vercel project and live URL here after deployment.
+`vercel.json` runs `npm run build`, publishes `dist/`, enables clean URLs, adds long-lived asset caching, and sets basic security headers. Vercel project `landscaping-site-1` is linked to production branch `main`. The production URL and storefront preview asset were verified after deployment.
 
 ## Completed and verified
 
-- New three-page landscaping website created from a clean repository and aligned to the Get Found tier.
+- New three-page landscaping website created from a clean repository and aligned to Fireworks storefront Tier 1.
 - Pittsburgh and South Hills service-area language added throughout the visible content and metadata.
 - Unique titles, descriptions, canonicals, Open Graph tags, Twitter cards, semantic headings, descriptive image alt text, JSON-LD, sitemap, and robots file added.
 - Fictional demo business, contact details, and quote behavior clearly disclosed.
 - Stock photography source and license references documented.
 - Responsive navigation and quote-form interaction implemented.
 - Automated build and site-structure checks implemented.
+- `npm run check` passed across all three pages for metadata, structure, JSON-LD, and image alternative text.
+- `npm run build` passed and produced the Vercel-ready `dist/` output.
+- Desktop visual QA verified the homepage, services page, quote page, navigation, images, and lack of horizontal overflow.
+- Quote-form validation and demo confirmation were tested with non-sensitive sample data; the service preselection query parameter was also verified.
+- Vercel production deployment was verified at https://landscaping-site-1.vercel.app.
+- The Fireworks storefront card, preview image, $699.99 purchase price, $39.99/month Tier 1 hosting, Featured status, Available status, and Live Demo control were verified on the public Website Collection.
 
 ## Remaining work
 
-- Run automated checks and production build, then inspect representative mobile and desktop layouts.
-- Commit the tested implementation to GitHub.
-- Deploy and verify the exact committed state on Vercel.
-- Replace placeholder deployment URLs if Vercel assigns a different production URL.
-- Add the live demo to the Fireworks storefront at the current Get Found price of $999 and $39.99/month hosting.
-- Capture storefront preview imagery if the Admin listing requires it.
 - For an eventual customer: replace identity, contact details, service radius, stock imagery as approved, canonical domain, and schema; connect the quote form; then remove `noindex` and the robots disallow rule.
+- Complete a dedicated phone-width visual pass during customer customization; the responsive CSS and mobile navigation are implemented, but the final customer content may alter wrapping.
+- Add the customer's approved custom domain in Vercel after purchase.
 
 ## Decisions that must be preserved
 
@@ -99,8 +106,10 @@ No database, payment, authentication, analytics, or inherited client integration
 
 ## Known issues or blockers
 
-- Vercel and storefront publication have not yet been completed in this initial handoff draft.
-- The stock photos are remotely hosted by Unsplash; a customer version may instead use optimized, locally controlled assets.
+- No launch blocker remains for the storefront demo.
+- The quote form intentionally does not send or retain inquiries in demo mode; connect and test a delivery provider before a customer launch.
+- Search indexing is intentionally disabled while the site contains fictional business details. Remove `noindex` and the robots disallow rule only after customer information is complete and verified.
+- The stock photos are remotely hosted by Unsplash; a customer version may instead use approved project photos or optimized, locally controlled assets.
 
 ## Start the dedicated project chat with this prompt
 
