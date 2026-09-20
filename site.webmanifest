@@ -1,0 +1,10 @@
+{
+  "name": "Rivers & Roots Landscaping Demo",
+  "short_name": "Rivers & Roots",
+  "description": "A ready-built Pittsburgh landscaping website demo by Fireworks.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4eb",
+  "theme_color": "#17362b",
+  "icons": []
+}

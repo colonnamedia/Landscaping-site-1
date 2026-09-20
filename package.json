@@ -1,0 +1,14 @@
+{
+  "name": "rivers-roots-landscaping-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fireworks ready-built landscaping website demo for the Pittsburgh market.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check-site.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

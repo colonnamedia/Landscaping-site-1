@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+
+# This is a storefront demo with fictional business details. Remove the
+# disallow rule and page-level noindex tags only after client customization.
+Sitemap: https://landscaping-site-1.vercel.app/sitemap.xml
