@@ -21,7 +21,7 @@
 
 ## Goal and approved scope
 
-Create a polished, ready-built landscaping website for the Fireworks website collection. The four-page site targets Pittsburgh and the South Hills with locally relevant service copy, a detailed quote-request experience, responsive design, stock photography, and complete SEO scaffolding. Publish it through Vercel and list it in the Fireworks storefront using first-tier website pricing and hosting.
+Create a polished, ready-built landscaping website for the Fireworks website collection. The three-page site targets Pittsburgh and the South Hills with locally relevant service copy, a detailed quote-request experience, responsive design, stock photography, and complete SEO scaffolding. Publish it through Vercel and list it in the Fireworks storefront using first-tier website pricing and hosting.
 
 ## Source and design direction
 
@@ -47,7 +47,7 @@ Create a polished, ready-built landscaping website for the Fireworks website col
 
 - `/` — Pittsburgh-focused homepage; primary action: Request a Free Quote.
 - `/services` — landscape design, patios and walkways, retaining walls and grading, lawn and seasonal care.
-- `/about` — local-first approach and trust-building company-story structure without fabricated claims.
+- `/#approach` — local-first approach and trust-building content without a fourth page, preserving the Get Found three-page limit.
 - `/quote` — detailed inquiry form covering contact details, location, services, timeline, budget, and project goals.
 - `/robots.txt`, `/sitemap.xml`, `/site.webmanifest`, `/favicon.svg` — discovery and browser metadata assets.
 
@@ -70,7 +70,7 @@ No database, payment, authentication, analytics, or inherited client integration
 
 ## Completed and verified
 
-- New four-page landscaping website created from a clean repository.
+- New three-page landscaping website created from a clean repository and aligned to the Get Found tier.
 - Pittsburgh and South Hills service-area language added throughout the visible content and metadata.
 - Unique titles, descriptions, canonicals, Open Graph tags, Twitter cards, semantic headings, descriptive image alt text, JSON-LD, sitemap, and robots file added.
 - Fictional demo business, contact details, and quote behavior clearly disclosed.
@@ -84,7 +84,7 @@ No database, payment, authentication, analytics, or inherited client integration
 - Commit the tested implementation to GitHub.
 - Deploy and verify the exact committed state on Vercel.
 - Replace placeholder deployment URLs if Vercel assigns a different production URL.
-- Add the live demo to the Fireworks storefront at the current first-tier website price and $39.99/month hosting.
+- Add the live demo to the Fireworks storefront at the current Get Found price of $999 and $39.99/month hosting.
 - Capture storefront preview imagery if the Admin listing requires it.
 - For an eventual customer: replace identity, contact details, service radius, stock imagery as approved, canonical domain, and schema; connect the quote form; then remove `noindex` and the robots disallow rule.
 
