@@ -34,6 +34,16 @@ if (quoteForm) {
 
     if (!quoteForm.reportValidity()) return;
 
+    const photos = [...(quoteForm.querySelector('[name="photos"]')?.files || [])];
+    if (photos.length > 3 || photos.some(file => !["image/jpeg", "image/png", "image/webp"].includes(file.type) || file.size > 5 * 1024 * 1024)) {
+      const status = quoteForm.querySelector("[data-form-status]");
+      status.textContent = "Choose up to 3 JPG, PNG, or WebP photos, each under 5 MB. No files are uploaded in this demo.";
+      status.classList.add("is-visible");
+      status.setAttribute("tabindex", "-1");
+      status.focus();
+      return;
+    }
+
     const selectedServices = quoteForm.querySelectorAll('[name="services"]:checked');
     const firstService = quoteForm.querySelector('[name="services"]');
     if (!selectedServices.length) {
@@ -48,7 +58,7 @@ if (quoteForm) {
 
     const status = quoteForm.querySelector("[data-form-status]");
     const firstName = quoteForm.querySelector('[name="firstName"]')?.value.trim();
-    status.textContent = `${firstName ? `${firstName}, t` : "T"}hanks for testing the quote form. This storefront demo validates the complete inquiry; a purchased website is connected to the customer's email or CRM before launch.`;
+    status.textContent = `${firstName ? `${firstName}, t` : "T"}hanks for testing the quote form. This storefront demo validates the inquiry and selected files locally; no details or images are sent or stored. A purchased website is connected to the customer's email or CRM before launch.`;
     status.classList.add("is-visible");
     status.setAttribute("tabindex", "-1");
     status.focus();

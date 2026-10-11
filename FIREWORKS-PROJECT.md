@@ -19,13 +19,13 @@
 | Preview URL | https://landscaping-site-1.vercel.app |
 | Live URL | https://landscaping-site-1.vercel.app |
 | Live-site status | Production deployment verified; public Fireworks storefront listing verified |
-| Storefront listing | Rivers & Roots — Landscaping Website — Featured, Available, $699.99 + $39.99/month Tier 1 hosting |
+| Storefront listing | Rivers & Roots — Landscaping Website — Featured, Available, $1,499 build + $499/year hosting (or $59.99/month); domain $20/year; integrations quoted separately |
 | Storefront URL | https://fireworks-websitebuilder.com/WebsiteCollection |
 | Last verified | September 20, 2026 |
 
 ## Goal and approved scope
 
-Create a polished, ready-built landscaping website for the Fireworks website collection. The three-page site targets Pittsburgh and the South Hills with locally relevant service copy, a detailed quote-request experience, responsive design, stock photography, and complete SEO scaffolding. Publish it through Vercel and list it in the Fireworks storefront using first-tier website pricing and hosting.
+Create a polished, ready-built landscaping website for the Fireworks website collection. The four-page site targets Pittsburgh and the South Hills with locally relevant service copy, a detailed quote-request experience, responsive design, stock photography, and complete SEO scaffolding. Publish it through Vercel and list it in the Fireworks storefront using first-tier website pricing and hosting.
 
 ## Source and design direction
 
@@ -51,7 +51,7 @@ Create a polished, ready-built landscaping website for the Fireworks website col
 
 - `/` — Pittsburgh-focused homepage; primary action: Request a Free Quote.
 - `/services` — landscape design, patios and walkways, retaining walls and grading, lawn and seasonal care.
-- `/#approach` — local-first approach and trust-building content without a fourth page, preserving the three-page storefront tier.
+- `/#approach` — local-first approach and trust-building content without a fourth page, preserving the four-page storefront tier.
 - `/quote` — detailed inquiry form covering contact details, location, services, timeline, budget, and project goals.
 - `/robots.txt`, `/sitemap.xml`, `/site.webmanifest`, `/favicon.svg` — discovery and browser metadata assets.
 
@@ -116,3 +116,10 @@ No database, payment, authentication, analytics, or inherited client integration
 ```text
 Use the attached FIREWORKS-PROJECT.md as the source of truth for this website. Inspect the repository and verify whether anything changed after the recorded commits before editing. Preserve the documented design, hosting, and integration decisions. Work on a separate branch and provide a current preview. Do not merge or publish until Anthony approves it.
 ```
+
+## 2026-10-11 enhancement
+
+- Added Projects concepts with stock photography clearly labeled and a before-and-after case-study framework; real client photos require permission and verification.
+- Quote form permits choosing up to three local images for validation only. Files are not uploaded or stored; a real upload provider, privacy terms, and retention rules are client-specific.
+- Recommended Standard build: $1,499 for four pages, gallery structure, and detailed quote intake. Hosting $499/year primary or $59.99/month; domain $20/year. Photo upload storage, CRM, and scheduling are separately scoped add-ons.
+- Future hero variations: wide manicured lawn, seasonal planting, hardscape detail. Do not imply stock images are actual completed work.
